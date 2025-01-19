@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+        html, body {
+            height: 100%; /* Make sure the body and html take the full height of the viewport */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://marketplace.canva.com/EAE-JD-HPo8/1/0/1600w/canva-black-and-blue-cyberpunk-sky-night-gaming-desktop-background-8nWaXKWjlBo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensure footer is at the bottom */
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+            color: #00d5e4; /* Change this to your desired color */
+        }
+
+        .platforms-container {
+            height: calc(100vh - 100px); /* Full viewport height minus space for the title */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-50px); /* Shift slightly upwards for upper central alignment */
+        }
+
+        .platforms {
+            display: flex;
+            gap: 30px;
+        }
+
+        .platforms a {
+            display: block;
+            width: 80px;
+            height: 80px;
+            background-color: #b0cae2;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .platforms img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .platforms a:hover {
+            opacity: 0.8;
+        }
+
+        .platforms p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #00eeff;
+        }
+
+        footer {
+            background-color: #333;
+            color: rgb(0, 174, 255);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #00c0fa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* Align items horizontally at the center */
+        gap: 20px; /* Space between the two <p> elements */
+    }
+
+    footer p {
+        margin: 0; /* Remove default margin */
+    }
+
+    footer a {
+        color: #00c3ff;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+    footer {
+        background-color: transparent; /* Make background transparent */
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 17px 10px; /* Reduce padding for a minimal look */
+        font-size: 20px; /* Smaller text size */
+    }
+
+    footer a {
+        color: #2e1a88;
+        text-decoration: none;
+        margin: 0 10px; /* Space between links */
+    }
+
+    footer a:hover {
+        text-decoration: underline; /* Underline on hover for better UX */
+    }
+
+    footer p {
+        margin: 0; /* Remove margin around the <p> */
+    }
+    </style>
+</head>
+<body>
+    <h1><u>My Portfolio</u></h1>
+    <div class="platforms-container">
+        <div class="platforms">
+            <!-- Link to YouTube -->
+            <a href="https://www.youtube.com/@KingGamer1064" target="_blank">
+                <img src="https://yt3.googleusercontent.com/QsipMiEZMaeSXoTSEebXMJENkB7Q57qRkg2N9hT6VbW80O_NIK_Y8maze_NmpkDThXykt5SlNpQ=s900-c-k-c0x00ffffff-no-rj" alt="YouTube">
+                <p>YouTube</p>
+            </a>
+
+            <!-- Link to Discord -->
+            <a href="https://discord.com/users/836608022230466610" target="_blank">
+                <img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Emblem.png" alt="Discord">
+                <p>Discord</p>
+            </a>
+
+            <!-- Link to Twitch -->
+            <a href="https://www.twitch.tv/kinggamer1064" target="_blank">
+                <img src="https://assets.twitch.tv/assets/mobile_iphone-526a4005c7c0760cb83f.png" alt="Twitch">
+                <p>Twitch</p>
+            </a>
+
+            <!-- Link to Steam -->
+            <a href="https://steamcommunity.com/profiles/76561199155704267" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/480px-Steam_icon_logo.svg.png" alt="Steam">
+                <p>Steam</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="./public/about.html">About me</a></p>
+        <p><a href="./public/contact.html">Contact Me</a></p>
+    </footer>
+</body>
+</html>
